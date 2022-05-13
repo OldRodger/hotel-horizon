@@ -49,16 +49,21 @@ const controlBookBtnClick = function(queryParam){
     window.location.assign(`./src/pages/reservation.html${queryParam}`);
 }
 
+const newFeature = () => {
+    console.log("Yayyy this is a new feature");
+}
+
 
 
 const init = function(){
-controlLoadHotelsOnStart();
+    controlLoadHotelsOnStart();
     controlStickyNav();
     slideView.handleSlideBtnClick();
     slideView.moveToSlideIndex(0);
     searchView.searchDropdownClickHandler(controlDisplayDropdown);
     searchView.handleSearchBtnClick(controlSearchBtnClicked);
     roomCardsView.handleBookBtnClicked(controlBookBtnClick);
+    newFeature();
 }
 
 
