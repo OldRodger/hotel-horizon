@@ -3,6 +3,9 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  @include respond(phone){
+    width: 80%;
+  }
 
   h1{
     color: $color-secondary;
@@ -54,21 +57,30 @@
   }
 
   
-&__btn{
-  display: inline-block;
-  margin-top: 1.5rem ;
-  padding: 1.5rem 4rem;
-  color: white;
-  cursor: pointer;
-  background-color: $color-dark;
-  border: none;
-  align-self: center;
+  &__btn{
+    display: inline-block;
+    margin-top: 1.5rem ;
+    padding: 1.5rem 4rem;
+    color: white;
+    cursor: pointer;
+    background-color: $color-dark;
+    border: none;
+    align-self: center;
 
-  &:hover{
-    background-color: darken($color-dark, 5%);
-}
+    &:hover{
+      background-color: darken($color-dark, 5%);
+    }
 
-}
+    @include respond(phone){
+      margin-top: 3.5rem;
+      align-self: flex-start;
+      width: 100%;
+      background-color: $color-primary;
+      padding: 1.9rem 4rem;
+
+    }
+  
+  }
 
 }
   
