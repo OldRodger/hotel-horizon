@@ -49,9 +49,7 @@ const controlBookBtnClick = function(queryParam){
     window.location.assign(`./src/pages/reservation.html${queryParam}`);
 }
 
-const newFeature = () => {
-    console.log("Yayyy this is a new feature");
-}
+
 
 
 
@@ -63,7 +61,7 @@ const init = function(){
     searchView.searchDropdownClickHandler(controlDisplayDropdown);
     searchView.handleSearchBtnClick(controlSearchBtnClicked);
     roomCardsView.handleBookBtnClicked(controlBookBtnClick);
-    newFeature();
+    console.log("Still in process");
 }
 
 

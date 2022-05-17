@@ -17,5 +17,3 @@ export const API_GET_CONFIG = {
         'Authorization' : `Basic ${btoa('admin:admin')}`,
     }
 }
-
-console.log('Hello');
