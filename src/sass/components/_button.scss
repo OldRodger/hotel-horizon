@@ -64,4 +64,14 @@
 }
 
 
+.btn--link{
+    margin-top: 1.5rem;
+    text-decoration: underline;
+    display: none;
+
+    @include respond(phone){
+        display: block;
+    }
+}
+
 

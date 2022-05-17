@@ -21,6 +21,10 @@
         background-color: $color-secondary;
         padding: 2em;
         position: relative;
+
+        @include respond(phone){
+            display: none;
+        }
         
       
         
