@@ -61,7 +61,6 @@ const init = function(){
     searchView.searchDropdownClickHandler(controlDisplayDropdown);
     searchView.handleSearchBtnClick(controlSearchBtnClicked);
     roomCardsView.handleBookBtnClicked(controlBookBtnClick);
-    console.log("Still in process");
 }
 
 

@@ -37,9 +37,17 @@
     }
     @include respond(phone){
         grid-column: 2 / span 10;
-        grid-row-start: 2;
+        grid-row-start: 3;
         text-align: center;
 
+    }
+
+    &__btn{
+        display: none !important;
+
+        @include respond(phone){
+            display: inline-block !important;
+        }
     }
 }
 
